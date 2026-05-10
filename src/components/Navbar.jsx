@@ -7,7 +7,7 @@ const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <motion.nav 
+    <motion.nav
       className="navbar"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
@@ -15,16 +15,16 @@ const Navbar = () => {
     >
       <div className="navbar-container">
         <a href="/" className="logo">
-          Antigravity
+          Jiahao Chen
         </a>
 
         <div className="nav-links">
           <a href="#work" className="nav-link">Work</a>
           <a href="#about" className="nav-link">About</a>
           <a href="#contact" className="nav-link">Contact</a>
-          
-          <button 
-            className="theme-toggle" 
+
+          <button
+            className="theme-toggle"
             onClick={toggleTheme}
             aria-label="Toggle theme"
           >

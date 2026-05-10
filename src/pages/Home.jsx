@@ -15,8 +15,8 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
-  visible: { 
-    opacity: 1, 
+  visible: {
+    opacity: 1,
     y: 0,
     transition: {
       duration: 0.8,
@@ -30,20 +30,20 @@ const Home = () => {
     <main className="home">
       <section className="hero">
         <div className="container hero-container">
-          <motion.div 
+          <motion.div
             className="hero-content"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
           >
             <motion.p variants={itemVariants} className="greeting">
-              Hello, I am a creative developer.
+              Hello, my name is Jiahao Chen.
             </motion.p>
-            
+
             <motion.h1 variants={itemVariants} className="title">
-              Crafting digital <br/>
-              <span className="text-muted">experiences</span> with <br/>
-              minimalist design.
+              A computer scientist <br />
+              <span className="text-muted">passionate</span> about <br />
+              technology and innovation.
             </motion.h1>
 
             <motion.div variants={itemVariants} className="cta-container">
@@ -53,8 +53,8 @@ const Home = () => {
               </a>
             </motion.div>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             className="hero-visual"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
