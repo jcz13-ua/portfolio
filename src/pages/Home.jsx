@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import GithubProjects from '../components/GithubProjects';
 import './Home.css';
 
 const containerVariants = {
@@ -66,11 +67,12 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Placeholder for Work Section */}
+      {/* GitHub Projects Section */}
       <section id="work" className="section work-section">
         <div className="container">
           <h2 className="section-title">Selected Projects</h2>
-          <p className="section-subtitle">More content coming soon...</p>
+          <p className="section-subtitle">Here are some of my recent open-source projects on GitHub.</p>
+          <GithubProjects />
         </div>
       </section>
     </main>
